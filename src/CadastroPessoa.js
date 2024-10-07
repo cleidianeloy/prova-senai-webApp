@@ -1,5 +1,5 @@
 import axios from 'axios';
-import {useEffect} from 'react-dom';
+import {useEffect} from 'react';
 import './cadastroPessoa.css';
 import { useState } from 'react';
 
@@ -105,7 +105,7 @@ function CadastroPessoa(){
                 <legend>Endereço</legend> 
                         <label id="cep">
                             <span>CEP</span>
-                            <input id="cep-input" name="cep" type="number" max="99999999"  onChange={onChangeCep}/>
+                            <input id="cep-input" name="cep" type="number" max="99999999" />
                         </label>
                         <label id="rua">
                             <span>Rua</span>

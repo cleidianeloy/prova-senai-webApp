@@ -1,0 +1,72 @@
+fieldset{
+    margin-block: 1rem;
+}
+h1{
+    margin-inline: 0.55em;
+    border-bottom: 1px solid;
+}
+form button{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    background-color: #0583D6;
+    color: white;
+}
+table{
+    margin-block: 1rem;
+}
+#endereco{
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "cep cep cep cep"
+        "rua rua rua num"
+        "cidade cidade estado estado";
+    gap: 0.5rem;
+}
+#endereco legend{
+    border: 1px solid black;
+    padding: 0.3rem;
+}
+#endereco label{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+#endereco span{
+    min-width: 5rem;
+}
+#endereco #cep{
+    grid-area: cep;
+}
+#endereco #rua{
+    grid-area: rua;
+}
+#endereco #num{
+    grid-area: num;
+}
+#endereco #cidade{
+    grid-area: cidade;
+}
+#endereco #estado{
+    grid-area: estado;
+}
+#pessoa{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 0.5rem;
+}
+#pessoa label {
+    grid-template-columns: 10rem 1fr;
+    display: grid;
+}
+input[name="cpf"]{
+    width: 60%;
+}
+input[name="date"]{
+    width: 40%;
+}
+input[name="cep"]{
+    width: 25rem;
+}
